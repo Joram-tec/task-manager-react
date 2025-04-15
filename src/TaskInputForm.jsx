@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react';
 function TaskInputForm({ addTask }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [isSubmitted, setSubmission] = useState();
-  const handleClick = (event, apiUrl) => {
+  const handleClick = (event) => {
     event.preventDefault();
     useEffect(() => {   
       fetch(apiUrl,{
@@ -47,11 +46,10 @@ function TaskInputForm({ addTask }) {
         <button
           type='submit'
           className='btn add-btn'
+          disabled={isSubmitting}
           onClick={handleClick} // option 1
-          // onClick={() => handleClick()} // option 2
-          // onClick={handleClick()} // this doesn't work
         >
-          Add Task
+          {isSubmitting ? 'Adding Task...' : 'Add Task'}
         </button>
       </form>
     </>

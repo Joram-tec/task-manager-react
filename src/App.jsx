@@ -5,10 +5,8 @@ import TaskList from './TaskList';
 import Footer from './Footer';
 import { myTasks } from './tasks';
 
-
 function App() {
-  const apiUrl = ("http://localhost:3001/tasks")
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(myTasks);
   console.log(tasks);
 
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +32,7 @@ const addTask = (newTask) => {
       <h1>Gladiator's Task Manager</h1>
       <TaskInputForm addTask={addTask} />
       <h2>Task List</h2>
-      {isLoading ? <h3>Loading...</h3> : <TaskList tasks={tasks}/>}
+      <TaskList tasks={tasks} />
       <Footer />
     </div>
   );

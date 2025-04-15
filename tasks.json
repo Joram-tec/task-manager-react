@@ -3,52 +3,62 @@
         {
             "id": 1,
             "title": "Buy groceries",
-            "description": "Milk, Bread, Eggs, and Fruits"
+            "description": "Milk, Bread, Eggs, and Fruits",
+            "completed": true
         },
         {
             "id": 2,
             "title": "Read a book",
-            "description": "Finish reading 'Atomic Habits'"
+            "description": "Finish reading 'Atomic Habits'",
+            "completed": false
         },
         {
             "id": 3,
             "title": "Workout",
-            "description": "30-minute run and strength training"
+            "description": "30-minute run and strength training",
+            "completed": false
         },
         {
             "id": 4,
             "title": "Call mom",
-            "description": "Check in and catch up"
+            "description": "Check in and catch up",
+            "completed": false
         },
         {
             "id": 5,
             "title": "Clean workspace",
-            "description": "Organize desk and delete unused files"
+            "description": "Organize desk and delete unused files",
+            "completed": false
         },
         {
             "id": 6,
             "title": "Plan weekend trip",
-            "description": "Research destinations and book accommodations"
+            "description": "Research destinations and book accommodations",
+            "completed": false
         },
         {
             "id": 7,
             "title": "Finish project report",
-            "description": "Complete the final draft and send it to the team"
+            "description": "Complete the final draft and send it to the team",
+            "completed": false
         },
         {
             "id": 8,
             "title": "Practice guitar",
-            "description": "Learn new chords and practice favorite songs"
+            "description": "Learn new chords and practice favorite songs",
+            "completed": false
         },
         {
             "id": 9,
             "title": "Meditate",
-            "description": "15 minutes of mindfulness meditation"
+            "description": "15 minutes of mindfulness meditation",
+            "completed": false
         },
         {
             "id": 10,
             "title": "Watch a movie",
-            "description": "Enjoy a relaxing evening with a good film"
+            "description": "Enjoy a relaxing evening with a good film",
+            "completed": false
         }
 ]
 
