@@ -1,11 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function TaskInputForm({ addTask }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-
-  const handleClick = (event) => {
+  const [isSubmitted, setSubmission] = useState();
+  const handleClick = (event, apiUrl) => {
     event.preventDefault();
+    useEffect(() => {   
+      fetch(apiUrl,{
+      method: 'Post',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+     }, [])
+ 
 
     const newTask = {
       id: Math.floor(Math.random() * 1000), // Generate a random ID
